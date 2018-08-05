@@ -1,0 +1,129 @@
+.body {
+    -fx-background-color: #FFF;
+    -fx-font-family: "Helvetica Neue";
+}
+
+.title {
+    -fx-font-size: 45;
+    -fx-vgap: 20;
+}
+
+.paymentSuccessfulText  {
+    -fx-font-size: 25;
+    -fx-vgap: 16;
+}
+
+.statistics > Text {
+    -fx-font-size: 14;
+    -fx-text-fill: gray;
+}
+
+TextField {
+    -fx-border-color: #B7BBC0;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: transparent;
+}
+
+Hyperlink {
+    -fx-border-style: none;
+    -fx-border-width: 0;
+    -fx-text-fill: #000;
+}
+
+Button {
+    -fx-background-radius: 0;
+    -fx-background-color: #F1F1F2;
+    -fx-border-color: transparent;
+}
+
+.error {
+    -fx-fill: #D91E18;
+    visibility: hidden;
+}
+
+Button:hover {
+    -fx-background-color: #e1e1e2;
+}
+
+ComboBox {
+    -fx-border-color: #B7BBC0;
+    -fx-background-color: #FFF;
+    -fx-min-width: 120;
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected, .combo-box-popup .list-view .list-cell:filled:selected:hover
+{
+    -fx-background-color: #db6a6c;
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover
+{
+    -fx-background-color: #db6a6c;
+}
+
+DatePicker {
+    -fx-border-radius: 0;
+}
+
+DatePicker > .text-field {
+    -fx-border-color: #B7BBC0;
+    -fx-background-color: #FFF;
+    -fx-background-radius: 0;
+}
+
+DatePicker > .arrow-button {
+    -fx-border-color: transparent;
+    -fx-background-color: #FFF;
+    -fx-background-radius: 0;
+}
+
+RadioButton .radio {
+    -fx-background-color: #FFF;
+    -fx-border-color: #4C4C4C;
+    -fx-border-radius: 30;
+
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #F1F1F2;
+    -fx-background-radius: 0em;
+    -fx-border-color: transparent;
+}
+
+.listing {
+    -fx-border-width: 1;
+    -fx-border-color: #EEE;
+}
+
+.h2 {
+    -fx-font-size: 20;
+}
+
+.selected {
+    -fx-background-color: #000;
+    -fx-text-fill: #FFF;
+}
+
+.accented {
+    -fx-background-color: #db6a6c;
+    -fx-text-fill: #FFF;
+    -fx-font-weight: bolder;
+}

@@ -1,0 +1,65 @@
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<GridPane fx:controller="app.controllers.BookingController"
+          xmlns:fx="http://javafx.com/fxml" hgap="0"
+          styleClass="body">
+    <Hyperlink styleClass="back" GridPane.halignment="LEFT" GridPane.columnIndex="0"
+               GridPane.rowIndex="0" onAction="#goBack">&lt; Back
+        <GridPane.margin>
+            <Insets bottom="0" left="25" right="0" top="18"/>
+        </GridPane.margin>
+    </Hyperlink>
+    <ScrollPane GridPane.halignment="CENTER" GridPane.hgrow="always"
+                GridPane.columnIndex="0"
+                GridPane.rowIndex="1"
+                fitToWidth="true">
+        <padding>
+            <Insets top="25" right="25" bottom="0" left="25"/>
+        </padding>
+        <content>
+            <VBox fillWidth="true" spacing="18">
+                <children>
+                    <Text styleClass="title">Booking</Text>
+                    <VBox fx:id="listingsContainer" spacing="20"></VBox>
+                </children>
+            </VBox>
+        </content>
+    </ScrollPane>
+    <GridPane fx:id="checkoutPane" styleClass="pricePane" GridPane.columnIndex="0"
+              GridPane.rowIndex="2"
+              GridPane.hgrow="always">
+        <padding>
+            <Insets bottom="18" left="44" right="44" top="18"/>
+        </padding>
+        <Text fx:id="PriceText" GridPane.halignment="RIGHT" GridPane.columnIndex="0"
+              GridPane.rowIndex="0"
+              GridPane.hgrow="ALWAYS">
+            <GridPane.margin>
+                <Insets bottom="5" left="0" right="0" top="0"/>
+            </GridPane.margin>
+        </Text>
+        <Text fx:id="NightsText" styleClass="checkout" GridPane.halignment="RIGHT" GridPane.columnIndex="0"
+              GridPane.rowIndex="1"
+              GridPane.hgrow="ALWAYS">
+            <GridPane.margin>
+                <Insets bottom="28" left="0" right="0" top="0"/>
+            </GridPane.margin>
+        </Text>
+        <Button styleClass="accented" GridPane.halignment="RIGHT" GridPane.columnIndex="0"
+                GridPane.rowIndex="2"
+                GridPane.hgrow="ALWAYS" onAction="#handleCheckoutAction">CHECKOUT
+            <GridPane.margin>
+                <Insets bottom="15" left="0" right="0" top="0"/>
+            </GridPane.margin>
+        </Button>
+        <Text fx:id="NightsInputErrorText" styleClass="error" GridPane.halignment="CENTER" GridPane.columnIndex="0"
+              GridPane.rowIndex="3"
+              GridPane.hgrow="ALWAYS">
+        </Text>
+    </GridPane>
+
+</GridPane>

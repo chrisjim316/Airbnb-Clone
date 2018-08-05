@@ -1,0 +1,21 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<GridPane fx:controller="app.controllers.CheckoutController"
+          xmlns:fx="http://javafx.com/fxml" alignment="TOP_LEFT" hgap="0" vgap="10"
+          styleClass="body">
+    <padding>
+        <Insets top="25" right="25" bottom="0" left="25"/>
+    </padding>
+    <Hyperlink fx:id="backButton" styleClass="back" GridPane.halignment="LEFT" GridPane.columnIndex="0"
+               GridPane.rowIndex="0" onAction="#goBack">&lt; Back
+    </Hyperlink>
+    <Text styleClass="title" GridPane.halignment="LEFT" GridPane.columnIndex="0"
+          GridPane.rowIndex="2">Thanks for your order
+    </Text>
+    <Text fx:id="paymentSuccessfulText" styleClass="paymentSuccessfulText" GridPane.halignment="LEFT"
+          GridPane.columnIndex="0"
+          GridPane.rowIndex="3">
+    </Text>
+</GridPane>

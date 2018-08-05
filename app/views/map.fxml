@@ -1,0 +1,31 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.*?>
+<GridPane fx:controller="app.controllers.MapController"
+          xmlns:fx="http://javafx.com/fxml" hgap="0"
+          styleClass="body" fx:id="root">
+    <Hyperlink styleClass="back" GridPane.halignment="LEFT" GridPane.columnIndex="0"
+               GridPane.rowIndex="0" onAction="#goBack">&lt; Back
+        <GridPane.margin>
+            <Insets bottom="0" left="25" right="0" top="18" />
+        </GridPane.margin>
+    </Hyperlink>
+    <ScrollPane GridPane.halignment="CENTER" GridPane.hgrow="always"
+                GridPane.columnIndex="0"
+                GridPane.rowIndex="3"
+                fitToWidth="true">
+        <padding>
+            <Insets top="25" right="25" bottom="0" left="25"/>
+        </padding>
+        <content>
+            <VBox fillWidth="true">
+                <children>
+                    <Pane fx:id="map" styleClass="map" prefHeight="500"></Pane>
+                    <VBox fx:id="listingsContainer" spacing="20">
+                    </VBox>
+                </children>
+            </VBox>
+        </content>
+    </ScrollPane>
+</GridPane>
